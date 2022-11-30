@@ -51,9 +51,9 @@ const StoreItem = ({ id, name, price, imgUrl }: storeItemProps) => {
             >
               <Button
                 className='btn-dark'
-                onClick={() => increaseCartQuantity(id)}
+                onClick={() => decreaseCartQuantity(id)}
               >
-                +
+                -
               </Button>
               <div>
                 <span className='fs-2'>{quantity} </span>
@@ -61,9 +61,9 @@ const StoreItem = ({ id, name, price, imgUrl }: storeItemProps) => {
               </div>
               <Button
                 className='btn-dark'
-                onClick={() => decreaseCartQuantity(id)}
+                onClick={() => increaseCartQuantity(id)}
               >
-                -
+                +
               </Button>
             </div>
             <Button className='btn-danger' onClick={() => removeFromCart(id)}>
